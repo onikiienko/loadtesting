@@ -3,13 +3,16 @@ loadtesting
 
 https://yandextank.readthedocs.org/en/latest/intro.html
 
-Для установки Яндекс-танка:
+For instance, add following repos to sources.list :
+
+deb http://ppa.launchpad.net/yandex-load/main/ubuntu precise main
+deb-src http://ppa.launchpad.net/yandex-load/main/ubuntu precise main
+
+or this way
 
 sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:yandex-load/main
+
+Then update package list and install yandex-load-tank-base package:
+
 sudo apt-get update && sudo apt-get install yandex-load-tank-base
-
-Для запуска теста выполняем
-yandex-tank
-
-Инструкции для нагрузки находятся в файле load.ini 
