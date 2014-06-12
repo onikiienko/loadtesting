@@ -1,7 +1,7 @@
 loadtesting
 ===========
 
-https://yandextank.readthedocs.org/en/latest/intro.htmls
+https://yandextank.readthedocs.org/en/latest/intro.html
 
 Для установки Яндекс-танка:
 
