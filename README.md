@@ -22,10 +22,10 @@ sudo apt-get update && sudo apt-get install yandex-load-tank-base
 
 Создаем файл с конфигурациями нагрузки, называем его load.ini, файл должен иметь примерно такой вид:
 
+```bash
 [phantom]
 address=127.0.0.1
 port=3000
-```bash
 instances=1000
 rps_schedule=const(1,1m) line(2,40,2m) const(40,2m) line(40,2,20m) const(1,1m)
 header_http=1.1
