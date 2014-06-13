@@ -29,7 +29,7 @@ port = 3000
 instances = 1000
 rps_schedule = const(1,1m) line(2,40,2m) const(40,2m) line(40,2,20m) const(1,1m)
 header_http = 1.1
-headers= [Host: maps.api.entrances.des.dev.kiev.test]
+headers = [Host: maps.api.entrances.des.dev.kiev.test]
          [Connection: close]
 uris = /2.0/js/?pkg=full
        /2.0/css/?pkg=full
