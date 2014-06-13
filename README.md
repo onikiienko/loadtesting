@@ -24,27 +24,27 @@ sudo apt-get update && sudo apt-get install yandex-load-tank-base
 
 ```bash
 [phantom]
-address=127.0.0.1
-port=3000
-instances=1000
-rps_schedule=const(1,1m) line(2,40,2m) const(40,2m) line(40,2,20m) const(1,1m)
-header_http=1.1
-headers=[Host: maps.api.entrances.des.dev.kiev.test]
-        [Connection: close]
-uris=/2.0/js/?pkg=full
-        /2.0/css/?pkg=full
-[autostop] autostop=http(5xx,10%,5s)
+address = 127.0.0.1
+port = 3000
+instances = 1000
+rps_schedule = const(1,1m) line(2,40,2m) const(40,2m) line(40,2,20m) const(1,1m)
+header_http = 1.1
+headers= [Host: maps.api.entrances.des.dev.kiev.test]
+         [Connection: close]
+uris = /2.0/js/?pkg=full
+       /2.0/css/?pkg=full
+[autostop] autostop = http(5xx,10%,5s)
 ```
 ### Начинаем обстрел
 
-Запускаем обсутрел, в папке с файлом load.ini выполнямем:
+Запускаем обстрел, в папке с файлом load.ini выполнямем:
 ```bash 
 yandex-tank
 ```
 
 ### Результаты
 
-После выполнения обсутрела будет создана папка с файлами, в ней есть файл формата html, в нем и хранятся результаты.
+После выполнения обстрела будет создана папка с файлами, в ней есть файл формата html, в нем и хранятся результаты.
 С сервера на свой комп копировать через scp, примерно так:
 ```bash
 sudo scp -r ./2014-06-13_15-51-00.9zIFj4/report_opdzT3.html  onikiienko@10.110.40.87:~/Projects/
