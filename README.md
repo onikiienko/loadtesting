@@ -47,7 +47,7 @@ yandex-tank
 После выполнения обстрела будет создана папка с файлами, в ней есть файл формата html, в нем и хранятся результаты.
 С сервера на свой комп копировать через scp, примерно так:
 ```bash
-sudo scp -r ./2014-06-13_15-51-00.9zIFj4/report_opdzT3.html  onikiienko@10.110.40.87:~/Projects/
+sudo scp -r ./2014-06-13_15-51-00.9zIFj4/*.html  onikiienko@10.110.40.87:~/Projects/
 ```
 
 Дока по [яндекс-танк](https://yandextank.readthedocs.org/en/latest/tutorial.html)
