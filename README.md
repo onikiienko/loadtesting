@@ -51,3 +51,15 @@ sudo scp -r ./2014-06-13_15-51-00.9zIFj4/*.html  onikiienko@10.110.40.87:~/Proje
 ```
 
 Дока по [яндекс-танк](https://yandextank.readthedocs.org/en/latest/tutorial.html)
+
+### Рабочий инстанс тут:
+```bash
+ssh user@10.110.40.88
+pass: user
+cd /var/www/applications/load/
+```
+Создаем свой конфигурационный файл load.ini и запускаем команду
+```bash 
+yandex-tank
+```
+Результаты в папке, название папки выводит вконце обстрела.
